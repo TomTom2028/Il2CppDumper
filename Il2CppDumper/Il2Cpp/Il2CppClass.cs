@@ -139,6 +139,7 @@ namespace Il2CppDumper
     public class Il2CppType
     {
         public ulong datapoint;
+        public uint extra_size;
         public uint bits;
         public Union data { get; set; }
         public uint attrs { get; set; }
@@ -147,6 +148,8 @@ namespace Il2CppDumper
         public uint byref { get; set; }
         public uint pinned { get; set; }
         public uint valuetype { get; set; }
+        
+        
 
         public void Init(double version)
         {
